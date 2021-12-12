@@ -41,7 +41,7 @@ var Stamen_Watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/w
 	// Create area feature for campus, style and add to map
 	var myArea = L.polygon([[39.740652, -105.010233], [39.743218, -105.011864],
 	[39.748473, -105.002487], [39.740283, -104.999037]],
-	{color: 'scarlet', weight: 4, text-align: center;
+	{color: 'red', weight: 4,
 }).addTo(map);
 	layerMenu.addOverlay(myArea, "Auraria Campus");
 	layerMenu.addOverlay(myDataPoint,"Auraria Library");
@@ -94,7 +94,7 @@ $.getJSON("buildings.json",function(data){
   #map { height: 80%; width: 95%; }
   #map-title { width: 100%; }
 	h1 {color: purple;
-			font-style: normal; font-family: system-ui;
+			font-style: normal; font-family: system-ui; text-align: center;
 		}
 </style>
 
